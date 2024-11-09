@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head> 
+<body>
+    
+    <div class="container">
+            <div class="output">
+                <div class="output-screen">
+                    <input type="text" id="input-fill" placeholder="Calculator">
+                </div>
+            </div>
+            <div class="input" id="input">
+                <button onclick="clearDisplay()" class="butaun c">C</button>
+                <button onclick="deleteLast()" class="butaun backspace">Backspace</button>
+                <button onclick="appendToDisplay('(')" class="butaun aspas1">(</button>
+                <button onclick="appendToDisplay(')')" class="butaun aspas0">)</button>
+                <button onclick="appendToDisplay('%')" class="butaun percent">%</button>
+                <button onclick="appendToDisplay('/')" class="butaun per">/</button>
+                <button onclick="appendToDisplay('7')" class="butaun seven">7</button>
+                <button onclick="appendToDisplay('8')" class="butaun eight">8</button>
+                <button onclick="appendToDisplay('9')" class="butaun nine">9</button>
+                <button onclick="appendToDisplay('*')" class="butaun x">x</button>
+                <button onclick="appendToDisplay('4')" class="butaun four">4</button>
+                <button onclick="appendToDisplay('5')" class="butaun five">5</button>
+                <button onclick="appendToDisplay('6')" class="butaun six">6</button>
+                <button onclick="appendToDisplay('-')" class="butaun min">-</button>
+                <button onclick="appendToDisplay('1')" class="butaun one">1</button>
+                <button onclick="appendToDisplay('2')" class="butaun two">2</button>
+                <button onclick="appendToDisplay('3')" class="butaun three">3</button>
+                <button onclick="appendToDisplay('+')" class="butaun plus">+</button>
+                <button onclick="appendToDisplay('0')" class="butaun zero">0</button>
+                <button onclick="appendToDisplay('.')" class="butaun point">.</button>
+                <button onclick="calculate()" class="butaun equal">=</button>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
